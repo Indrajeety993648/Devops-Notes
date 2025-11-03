@@ -52,3 +52,42 @@ graph LR
 - **Orchestration:** Kubernetes
 - **IaC:** Terraform
 - **Monitoring:** Prometheus, Grafana
+
+# Linux Refresher
+
+**Date:** 03 November 2024
+**Lecture Topic:** Linux Refresher
+
+## 1. File Permissions
+Linux uses a User-Group-Others permission model.
+- **Read (r):** 4
+- **Write (w):** 2
+- **Execute (x):** 1
+
+**Visual Representation:**
+```mermaid
+graph TD
+    File[File: script.sh]
+    User[Owner: rwx (7)]
+    Group[Group: rx (5)]
+    Others[Others: r (4)]
+    User --> File
+    Group --> File
+    Others --> File
+```
+
+## 2. Directory Structure
+- `/bin`: Binaries
+- `/etc`: Configs
+- `/var`: Variable data
+- `/home`: Users
+
+## 3. Essential Commands
+| Command | Usage |
+| :--- | :--- |
+| `ls -la` | List all files with details |
+| `chmod +x` | Make executable |
+| `chown user:group` | Change ownership |
+| `ps aux` | List processes |
+| `top` | System monitor |
+| `grep` | Search text |
